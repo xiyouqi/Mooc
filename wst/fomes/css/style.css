@@ -1,0 +1,51 @@
+
+h1{ font-size: 20px;}
+		fieldset{
+			width: 615px; 
+			height: 346px;
+			 background: url(img/1.png);
+			 no-repeat:center; 
+			 padding:12px;
+			 border: none;
+			}
+		fieldset legend {display: none;
+		}
+		#textlild{
+			width: 16em;
+			border: solid 1px #aaa;
+			position: relative;
+			top: -3px;
+		}
+		#textlid{
+			width: 30em;
+			height: 3em;
+			border: solid 1px #aaa;
+		}
+		.checkbox{
+			border: solid 1px #d8bca9;
+			position: relative;
+			top: 3px;
+			left: -2px;
+		}
+		select{
+			border: solid 1px #d8bca9;
+		}
+		#radio{
+			border: solid 1px #d8bca9;
+			position: relative;
+			top: 3px;
+			left: -1px;
+		}
+		.title{
+			width: 160px;
+			float: left;
+			font-weight: bold;
+			margin-left: 20px;
+		}
+		.top{
+			margin-top:80px;
+		}
+		.center{
+			text-align:center;
+		}
+	</style>

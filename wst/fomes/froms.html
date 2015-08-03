@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>设计友好，易用的表单</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		h1{ font-size: 20px;}
+		fieldset{
+			width: 615px; 
+			height: 346px;
+			 background: url(img/1.png);
+			 no-repeat:center; 
+			 padding:12px;
+			 border: none;
+			}
+		fieldset legend {display: none;
+		}
+		#textlild{
+			width: 16em;
+			border: solid 1px #aaa;
+			position: relative;
+			top: -3px;
+		}
+		#textlid{
+			width: 30em;
+			height: 3em;
+			border: solid 1px #aaa;
+		}
+		.checkbox{
+			border: solid 1px #d8bca9;
+			position: relative;
+			top: 3px;
+			left: -2px;
+		}
+		select{
+			border: solid 1px #d8bca9;
+		}
+		#radio{
+			border: solid 1px #d8bca9;
+			position: relative;
+			top: 3px;
+			left: -1px;
+		}
+		.title{
+			width: 160px;
+			float: left;
+			font-weight: bold;
+			margin-left: 20px;
+		}
+		.top{
+			margin-top:80px;
+		}
+		.center{
+			text-align:center;
+		}
+	</style>
+</head>
+
+<body>
+	<form id="from1" name="from1" method="post" action="">
+	<fieldset>
+		<legend>学生信息登记表</legend>
+		<p class="top">
+				<label for="textfield" class="title">姓名</label>
+				<input type="text" name="textlield" id="textlield"></p>
+			<p
+				<label for="textarea" class="title">备注</label>
+				<textarea name="textarea" id="textarea" cols="45" rows="5"></textarea>
+			</p>
+			<p>
+				<span class="title">兴趣</span>
+				<label for="checkbox">文学</label>
+				<input type="checkbox" name="checkbox" class="checkbox"
+				id="checkbox">
+				<label for="checkbox2">艺术</label>
+				<input type="checkbox" name="checkbox" class="checkbox"
+				id="checkbox2">
+				<label for="checkbox3">体育</label>
+				<input type="checkbox" name="checkbox" class="checkbox"
+				id="checkbox3">
+				<label for="checkbox4">其他</label>
+				<input type="checkbox" name="checkbox" class="checkbox"
+				id="checkbox4">
+			</p>	
+			<p>
+				<span class="title">性别</span>女
+				<input type="radio" id="radio" value="radio">男
+				<input type="radio" id="radio" value="radio2">
+			</p>
+			<p>
+				<label for="select" class="title">专业</label>
+				<select name="select" id="select">
+					<option value="1">法律</option>
+					<option value="2">英语</option>
+					<option value="3">计算机</option>
+					<option value="4">财会</option>
+				</select>
+			</p>	
+			<p class="center">
+				<input type="submit" name="button" id="button" value="提交">
+				<input type="reset" name="button2" id="button2" value="重置">
+			</p>
+	</fieldset>
+	</form>
+</body>
+</html
