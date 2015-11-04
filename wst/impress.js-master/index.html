@@ -1,0 +1,89 @@
+<html lang="zn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>背影</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+    <div id="impress">  
+        <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+            <q>我与父亲不相见已二年余了, <b>我最不能</b> 忘记的是他的背影。</q>
+        </div>
+
+        <div class="step slide" data-x="0" data-y="-1500">
+            <q>“事已如此，<strong>不必难过</strong>好在<strong>天无绝人</strong>之路！</q>
+        </div>
+
+        <div class="step slide" data-x="1000" data-y="-1500">
+            <q>他肥胖的<strong>身子</strong> 向左 <strong>微倾</strong>显出努力的样子</q>
+        </div>
+w
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+            <span class="try">这时我看见他的背影</span>
+            <h1>我赶紧拭干了泪<sup>*</sup></h1>
+            <span class="footnote"><sup>*</sup>怕他看见，也怕别人看见</span>
+        </div>
+
+        <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+            <p>他先将橘子散放在地上，自己慢慢爬下，再抱起橘子走到这边时，我赶紧去搀他<strong>自己慢慢爬下</strong> <br/>
+           再抱起橘子走到这边时<p>我赶紧去搀他</p> <br/></p>
+        </div>
+
+        <div id="small" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+            <p>我走了 <b>到那边</b> <span class="thoughts">来信</span></p>
+        </div>
+
+        <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+            <p>我<b>望着他</b>走出去</p>
+        </div>
+
+        <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+            <p>等他的背影混入来来往往的人里 <b class="positioning">混入来来往往的人里</b>, <b class="rotating">再找不着了</b>我便进来坐下<b class="scaling">我的眼泪</b> 又来了</p>
+        </div>
+
+        <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+            <p>父亲和我都是<b>东奔西走</b>家中光景 <b class="imagination">是一日不如一日</b></p>
+        </div>
+
+        <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+            <p>他少年出外谋生，</p>
+            <q><a href="http://github.com/bartaz/impress.js">独力支持</a>做了许多大事!</q>
+        </div>
+
+        <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+            <p>家庭琐屑便往往触他之怒</p>
+        </div>
+
+        <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+            <p><span class="have">我身体平安，</span> <span class="you">惟膀子疼痛利害</span> <span class="noticed">举箸提笔</span> <span class="its">!</span> <span class="in">诸多不便</span> <b>大约大去<sup>之期不远矣</sup></b>?</p>
+            <span class="footnote">大约大去之期不远矣~~~~~</span>
+        </div>
+
+        <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+        </div>
+    </div>
+
+    <div class="hint">
+        <p>请按上下左右键转换画面</p>
+    </div>
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+</html>
