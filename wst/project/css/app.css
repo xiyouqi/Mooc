@@ -1,0 +1,168 @@
+
+html,body {
+	height: 100%;
+	background-color: rgb(227,227,227);
+}
+
+a {
+	color: rgb(34,66,87);
+}
+
+a:hover {
+	color: rgb(43,156,217);
+}
+
+.form-control {
+  height: 30px;
+  padding: 6px 12px;
+  border-radius: 3px;
+}
+
+.btn {
+ border-radius: 3px;
+}
+
+.btn-primary {
+  background-color:#2586BA;
+  border-color: rgb(35,125,173);
+}
+
+.main {
+	height:100%;
+	padding-left: 100px;
+}
+
+.side-left {
+	width:100px;
+	height:100%;
+	background-color:#2586BA;
+	position: absolute;
+	left: 0;
+}
+
+.side-face {
+	text-align: center;
+	border-radius: 3px;
+	background-color: rgb(43,152,217);
+	margin: 5px;
+	margin-bottom: 0;
+	color: #fff;
+	padding: 10px 0;
+}
+
+.side-face img {
+	margin: 10px 0;
+}
+
+.side-face .glyphicon {
+	margin:0 5px;
+}
+
+.side-menu {
+	list-style: none;
+	padding: 0;
+}
+
+.side-menu li {
+	border-radius: 3px 0 0 3px;
+	background-color: rgb(43,152,217);
+	text-align: center;
+	height: 60px;
+	padding-top:16px; 
+	margin-bottom: 5px;
+	color: #fff;
+	margin: 5px;
+}
+
+.side-menu .glyphicon {
+	font-size: 24px;
+}
+
+.side-menu li.active {
+	background-color: rgb(227,227,227);
+	color: rgb(29, 29, 29);
+	margin-right: 0;
+}
+
+.side-bottom-icon {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	text-align: center;
+	color: rgba(255,255,255,.7);
+}
+
+.side-bottom-icon .glyphicon {
+	margin:0 5px;
+}
+
+.side-bottom-icon .glyphicon:hover {
+	color: rgba(255,255,255,1);
+}
+
+.side-right {
+	width: 1
+}
+
+.nav-tabs {
+	background-color: rgb(236,236,236);
+	border-bottom: solid 1px rgb(195,195,195);
+	font-size: 14px;
+}
+
+.nav-tabs>li>a {
+  border: 1px solid transparent;
+  border-radius:0;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: rgb(43,156,217);
+  cursor: default;
+  background-color: transparent;
+  border:0;
+  border-bottom: 3px solid rgb(43,156,217);
+}
+
+.nav-tabs li.icon {
+	border-right: solid 1px rgb(195,195,195);
+}
+
+.breadcrumb {
+	border-top: #fff solid 1px;
+	border-bottom: solid 1px rgb(195,195,195);
+	background-color: rgb(236,236,236);
+	font-size: 13px;
+	margin:0;
+	border-radius: 0;
+}
+
+.view {
+	padding: 10px 20px;
+}
+
+.table {
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.15);
+}
+
+.table-bordered {
+  border: 1px solid rgb(195,195,195);
+}
+
+.table .cell-selected {
+	width:40px; 
+	text-align:center;
+}
+
+.table-bordered>thead>tr>th {
+  background-color: rgb(238,238,238);
+}
+
+.table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
+  background-color: rgb(223,234,238);
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+  border: 1px solid rgb(195,195,195);
+}
