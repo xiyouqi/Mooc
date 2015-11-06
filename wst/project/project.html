@@ -6,246 +6,279 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hello World</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/app.css">
+<link rel="stylesheet" type="text/css" href="css/wed.css">
 </head>
-
 <body>
-  <div class="clearfix">
-    <div class="pull-left" style="width:100px;height:200px;background-color:#2586BA;">
-      
+  <div class="main clearfix">
+    <div class="side-left">
+      <div class="side-face">
+        <img src="img/1.jpg" width="50px">
+        <p>王世涛</p>
+        <div class="side-ico">
+          <span class="glyphicon glyphicon-bell"></span>
+          <span class="glyphicon glyphicon-edit"></span>
+          <span class="glyphicon glyphicon-off"></span>
+        </div>        
+      </div>
+      <ul class="side-menu">
+        <li>
+          <span class="glyphicon glyphicon-th-large"></span>
+        </li>
+        <li>
+          <span class="glyphicon glyphicon-home"></span>
+        </li>
+        <li class="active">
+          <span class="glyphicon glyphicon-user"></span>
+        </li>
+      </ul>
+      <div class="side-bottom-icon">
+        <span class="glyphicon glyphicon-bell"></span>
+        <span class="glyphicon glyphicon-cog"></span>
+        <span class="glyphicon glyphicon-off"></span>
+      </div>
     </div>
-    <div class="pull-right">
-      
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="btn-group-vertical" role="group" aria-label="...">
-          <button type="button" class="btn btn-default btn-lg">
-            <span></span>
-          </button>        
-          <button type="button" class="btn btn-default btn-lg">
-            
-          </button>
-          <button type="button" class="btn btn-default btn-lg">
-            
-          </button>
-          <button type="button" class="btn btn-default btn-lg">
 
-          </button>
-          <button type="button" class="btn btn-default btn-lg">
+  
+    <div class="side-right">
+    <!--添加导航栏-->
+      <ul class="nav nav-tabs">
+        <li class="icon" role="presentation">
+          <a href="#">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </a>
+        </li>
+          <li role="presentation"><a href="#">垃圾清理</a></li>
+          <li role="presentation" class="active"><a href="#">污染指数</a></li>
+<!-- 在导航栏中第三栏添加一个下拉菜单-->
+          <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            大货车 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>城市垃圾</li>
+            <li>工业垃圾</li>
+            <li>生活垃圾</li>
+          </ul>
+          </li>
+      </ul>
+      <!--添加一个路径导航栏-->
+      <ol class="breadcrumb">
+        <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="#">城市垃圾</a></li>
+         <li><a href="#">工业垃圾</a></li>
+        <li class="active">垃圾清理</li>
+      </ol>
 
-          </button>
-          <button type="button" class="btn btn-default btn-lg">
+     <div class="view">
+     <!--添加表单-->
+        <form class="form-inline form-filter">
+          <div class="form-group">
+            <label for="exampleInputName2">项目</label>
+            <input type="text" class="form-control" id="exampleInputName2">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail2">日期</label>
+            <input type="email" class="form-control" id="exampleInputEmail2">
+          </div>
+           <div class="form-group">
+            <label for="exampleInputName2">关键字</label>
+            <input type="text" class="form-control" id="exampleInputName2">
+            </div>
+            <button type="submit" class="btn btn-default btn-sm">日期</button>
+        </form>
 
-          </button>
+      <div style="margin-top:10px;" class="clearfix">
+        <div class="pull-left">
+        <!--添加一个按钮-->
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-primary">
+              <span class="glyphicon glyphicon-plus"></span> 
+              添加项目
+            </button>
+          </div>
+          <div class="btn-group" role="group" aria-label="...">
+           <!--添加一个按钮组(过滤器)-->
+            <button type="button" class="btn btn-default">日报表</button>
+            <button type="button" class="btn btn-default">周报表</button>
+            <button type="button" class="btn btn-default">月报表</button>
+          </div>
+        </div>
+        <div class="pull-right">
+        <!--添加按钮-->
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-edit"></span> 
+              编辑
+            </button>
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-trash"></span> 
+              删除
+            </button>
+          </div>
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-cog"></span> 
+            </button>
+          </div>
         </div>
       </div>
-      
-      <div class="col-md-9">
-        <div class="">
-          <ul class="nav nav-tabs">
-            <li role="presentation" class="active"><a href="#">垃圾清理</a></li>
-             <li role="presentation" class="active"><a href="#">污染指数</a></li>
-              <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">大货车<span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <li><a href="#">城市垃圾</a></li>
-                  <li><a href="#">工业垃圾</a></li>
-                  <li><a href="#">厨卫垃圾</a></li>
-                </ul>
-              </div>
-          </ul>
 
-          <form class="form-inline">
-            <div class="form-group">
-              <label for="exampleInputName2">项目名称</label>
-              <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail2">关键字</label>
-              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-            </div>
-             <div class="form-group">
-              <label for="exampleInputName2">日期</label>
-              <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-            </div>
-          </form> 
-
-
-          <div class="rb-action pull-left">
-            <div>
-              <div class="btn-group">
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-plus" aria-hidden="true">新增</span> 
-                </button>
-              </div>
-              <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default">日报表</button>
-                <button type="button" class="btn btn-default">周报表</button>
-                <button type="button" class="btn btn-default">月报表</button>
-              </div>
-              <div class="btn-group">
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-edit" aria-hidden="true">编辑</span> 
-                </button>
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-trash" aria-hidden="true">删除</span> 
-                </button>
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> 
-                </button>
-              </div>   
-            </div>
-
-            <table class="table table-bordered">
+       <div style="margin-top:8px;">
+            <table class="table table-bordered table-condensed">
               <thead>
-                <tr class="active">
+                <tr>
+                  <th class="cell-selected"><input type="checkbox"></th>
                   <th>项目名称</th>
-                  <th>日期</th> 
-                  <th>分组</th> 
-                  <th>状态</th>
+                  <th>日期</th>
+                  <th>分组</th>
                   <th>创建人</th>
                   <th>备注</th>
                 </tr>
               </thead>
               <tbody>
-              <tr>
-                <td>违章车牌号管理</td>
-                <td>2015-10-12</td>
-                <td>B组</td>
-                <td>已更新</td>
-                <td>李向明</td>
-                <td></td>
-              </tr>
-              </tbody>
-              <tr>
-                <td>车辆过磅数据文件管理</td>
-                <td>2015-10-12</td>
-                <td>B组</td>
-                <td>已更新</td>
-                <td>李向明</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>人力资源基础设施开发</td>
-                <td>2015-10-12</td>
-                <td>B组</td>
-                <td>已更新</td>
-                <td>李向明</td>
-                <td>小牛负责</td>
-              </tr>
+                <tr class="active">
+                  <td class="cell-selected"><input type="checkbox"></td>
+                    <td>违章车牌号管理</td>
+                  <td>2015-10-12</td>
+                  <td>B组</td>
+                  <td>已更新</td>
+                  <td>李向明</td>
+                </tr>
+                <tr>
+                  <td class="cell-selected"><input type="checkbox"></td>
+                  <td>车辆过磅数据文件管理</td>
+                  <td>2015-10-12</td>
+                  <td>B组</td>
+                  <td>已更新</td>
+                  <td>李向明</td>
+                </tr>
+                <tr>
+                  <td class="cell-selected"><input type="checkbox"></td>
+                  <td>人力资源基础设施开发</td>
+                  <td>2015-10-12</td>
+                  <td>B组</td>
+                  <td>已更新</td>
+                  <td>李向明</td>
+                </tr>
               </tbody>
             </table>
+          </div>
 
-            <div class="rb-action pull-left">
-              <div class="btn-group">
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-plus" aria-hidden="true">新增</span> 
-                </button>
-              </div>
-              <div class="btn-group">
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-plus" aria-hidden="true">新增</span> 
-                </button>
-              </div>
-              <div class="btn-group">
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-plus" aria-hidden="true">新增</span> 
-                </button>
-              </div>
-              <div class="btn-group">
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-plus" aria-hidden="true">新增</span> 
-                </button>
-              </div>  
+          <div class="btn-group" role="group" aria-label="...">
+              <button type="button" class="btn btn-primary">
+                <span class="glyphicon glyphicon-plus"></span> 
+                  添加项目
+              </button>
+          </div>
+          <div class="btn-group" role="group" aria-label="...">
+              <button type="button" class="btn btn-primary">
+                <span class="glyphicon glyphicon-plus"></span> 
+                  添加项目
+              </button>
+          </div>
+          <div class="btn-group" role="group" aria-label="...">
+              <button type="button" class="btn btn-primary">
+                <span class="glyphicon glyphicon-plus"></span> 
+                  添加项目
+              </button>
+          </div>
+
+          <div style="margin-left:0px; margin-top:5px;">    
+            <div class="btn-group" role="group" aria-label="...">
+              <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-edit"></span>
+                编辑 
+              </button>
             </div>
-
-            <div class="btn-group">
+            <div class="btn-group" role="group" aria-label="...">
               <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-edit" aria-hidden="true">编辑</span> 
+                <span class="glyphicon glyphicon-edit"></span>
+                编辑  
               </button>
-            <div class="btn-group">
+            </div>
+            <div class="btn-group" role="group" aria-label="...">
               <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-edit" aria-hidden="true">编辑</span> 
-              </button>
-            <div class="btn-group">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-edit" aria-hidden="true">编辑</span> 
-              </button>
-            <div class="btn-group">
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-edit" aria-hidden="true">编辑</span> 
+                <span class="glyphicon glyphicon-edit"></span>
+                编辑  
               </button>
             </div>
           </div>
+
+      <div style="margin-top:10px;" class="clearfix">
+        <div class="pull-left">
+        <!--添加一个按钮-->
+          <div class="btn-group" role="group" aria-label="...">
+           <!--添加一个按钮组(过滤器)-->
+            <button type="button" class="btn btn-default">日报表</button>
+            <button type="button" class="btn btn-default">周报表</button>
+            <button type="button" class="btn btn-default">月报表</button>
+          </div>
+        </div>
+        <div class="pull-right">
+        <!--添加按钮-->
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-primary">
+              <span class="glyphicon glyphicon-plus"></span> 
+              添加项目
+            </button>
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-edit"></span> 
+              编辑
+            </button>
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-trash"></span> 
+              删除
+            </button>
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-cog"></span> 
+            </button>
+          </div>
         </div>
       </div>
-        <table class="table table-bordered">
+
+      <div style="margin-top:0px;">
+        <table class="table table-bordered table-condensed">
           <thead>
-            <tr class="active">
+            <tr>
+              <th class="cell-selected"><input type="checkbox"></th>
               <th>项目名称</th>
-              <th>日期</th> 
-              <th>分组</th> 
-              <th>状态</th>
+              <th>日期</th>
+              <th>分组</th>
               <th>创建人</th>
               <th>备注</th>
             </tr>
           </thead>
           <tbody>
-          <tr>
-            <td>违章车牌号管理</td>
-            <td>2015-10-12</td>
-            <td>B组</td>
-            <td>已更新</td>
-            <td>李向明</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>车辆过磅数据文件管理</td>
-            <td>2015-10-12</td>
-            <td>B组</td>
-            <td>已更新</td>
-            <td>李向明</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>人力资源基础设施开发</td>
-            <td>2015-10-12</td>
-            <td>B组</td>
-            <td>已更新</td>
-            <td>李向明</td>
-            <td>小牛负责</td>
-          </tr>
-           <tr>
-            <td>违章车牌号管理</td>
-            <td>2015-10-12</td>
-            <td>B组</td>
-            <td>已更新</td>
-            <td>李向明</td>
-            <td></td>
-          </tr>
-           <tr>
-            <td>违章车牌号管理</td>
-            <td>2015-10-12</td>
-            <td>B组</td>
-            <td>已更新</td>
-            <td>李向明</td>
-            <td></td>
-          </tr>
-           <tr>
-            <td>违章车牌号管理</td>
-            <td>2015-10-12</td>
-            <td>B组</td>
-            <td>已更新</td>
-            <td>李向明</td>
-            <td></td>
-          </tr>
+            <tr class="active">
+              <td class="cell-selected"><input type="checkbox"></td>
+                <td>违章车牌号管理</td>
+              <td>2015-10-12</td>
+              <td>B组</td>
+              <td>已更新</td>
+              <td>李向明</td>
+            </tr>
+            <tr>
+              <td class="cell-selected"><input type="checkbox"></td>
+              <td>车辆过磅数据文件管理</td>
+              <td>2015-10-12</td>
+              <td>B组</td>
+              <td>已更新</td>
+              <td>李向明</td>
+            </tr>
+            <tr>
+              <td class="cell-selected"><input type="checkbox"></td>
+              <td>人力资源基础设施开发</td>
+              <td>2015-10-12</td>
+              <td>B组</td>
+              <td>已更新</td>
+              <td>李向明</td>
+            </tr>
           </tbody>
         </table>
-        <ul class="pagination pull-right" style="padding:10px;">
+      </div>
+
+      <nav class="paging">
+        <ul class="pagination">
           <li>
             <a href="#" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
@@ -262,6 +295,8 @@
             </a>
           </li>
         </ul>
+      </nav>
+    </div>
   </div>
 </div>
 <script src="js/jquery-1.11.1.min.js"></script>
