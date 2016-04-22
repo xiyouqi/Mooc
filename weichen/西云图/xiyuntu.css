@@ -1,0 +1,327 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    display: block;
+}
+
+/*ÏìÓ¦Ê½µ¼º½*/
+.navbar-default {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    float: right;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #000000;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #737373;
+   float: none;
+}
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    font-family: Microsoft YaHei;
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+    top:200px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.filter h4{
+    color:#c0c0c0;
+}
+
+.filter{
+    padding-top: 20px;
+    padding-bottom:15px;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+.back img {
+    height:260px;
+    width: 260px;
+}
+/*¶þÆÁ*/
+.page1{
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.word1{
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    margin-bottom: 40px;
+}
+
+.introduce p{
+    text-indent: 2em;
+    text-align:justify;
+}
+
+.introduce{
+    font-family: "Microsoft YaHei";
+    text-align: center;
+}
+
+.introduce h1{
+    margin-bottom:20px;
+}
+
+
+/*ÈýÆÁ*/
+.word{
+    padding:1px 0;
+    color:#000000;
+    font-family: "Microsoft YaHei";
+    width:260px;
+    background-color:rgba(232,232,232,0.8);
+    position: relative;
+    top:-100px;
+    text-align: center;
+}
+
+.page2{
+   padding: 50px 0;
+    background-color:#f0f0f0;
+}
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 290px;
+}
+
+.card{
+    margin:0 -100px;
+}
+/*µ¯´°*/
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 0px solid #e5e5e5;
+}
+
+.close {
+    float: right;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+#mymodal{
+    font-family:Microsoft YaHei;
+}
+
+.modal-body{
+    font-size:18px;
+}
+
+/*µ×À¸*/
+#footer-white {
+    background: #fff;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#footer-white .menu h3 {
+    margin-top: 0;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#footer-white .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#footer-white .menu ul li {
+    display: block;
+    margin-bottom: 9px;
+}
+
+#footer-white .menu ul li a {
+    color: #89A1C0;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 13px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#footer-white .newsletter {
+    text-align: right;
+}
+
+#footer-white .newsletter .signup {
+    margin-bottom: 40px;
+}
+
+#footer-white .newsletter .signup p {
+    font-size: 13px;
+    color: #666;
+    width: 90%;
+    float: right;
+    text-align: left;
+    line-height: 20px;
+}
+
+#footer-white .newsletter .signup form {
+    float: right;
+    width: 90%;
+    position: relative;
+}
+
+#footer-white .newsletter .signup form input[type="text"] {
+    font-size: 13px;
+}
+
+#footer-white .newsletter .signup form input[type="submit"] {
+    border: 0;
+    background: #84B0E2;
+    color: #FFF;
+    border-radius: 3px;
+    padding: 6px 10px;
+    position: absolute;
+    top: 2px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.28);
+    right: 5px;
+    font-size: 13px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#footer-white .newsletter a {
+    border: 0;
+    text-decoration: none;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    margin-left: 15px;
+    position: relative;
+    top: -10px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#footer-white .credits {
+    margin-top: 30px;
+}
+
+#footer-white .credits .col-md-12 {
+    padding-top: 20px;
+    font-size: 13px;
+    text-align: center;
+    color: #A1AAB6;
+}
+
+
+
+
+
+
+
+
+
